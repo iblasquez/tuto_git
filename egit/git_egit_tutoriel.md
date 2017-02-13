@@ -967,7 +967,7 @@ Voici quelques lectures pour vous aider et donner envie de à des projets exista
 
 ## Références <a id="references"></a>
 
-Les références ayant servi à écrire le tutoriel sont accessibles : [ici](git_references.md)
+Les références consultées pour l'écriture de ce tutoriel sont disponibles :  [ici](git_references.md)
 
  
 ... sans oublier ...
@@ -982,7 +982,7 @@ Les références ayant servi à écrire le tutoriel sont accessibles : [ici](git
 ## On en discute ?
 Pour les discussions, c'est par [là](https://github.com/iblasquez/tuto_git/issues)  
 Pour les propositions de contenu, de modification par [ici](https://github.com/iblasquez/tuto_git/pulls)  
-Et bien sûr, n'hésitez pas à personnaliser vos messages avec des [emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) :simple_smile:
+Et bien sûr, n'hésitez pas à personnaliser vos messages avec des [emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) :smile:
 
 ## Licence
 

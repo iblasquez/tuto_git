@@ -283,16 +283,17 @@ Dans la **vue `History`**, une étiquette avec le nom du tag apparaît en tout d
 
 ## Références
 
-Les références ayant servi à écrire le tutoriel sont accessibles : [ici](git_references.md)
+Les références consultées pour l'écriture de ce tutoriel sont disponibles :  [ici](git_references.md)
 
 ## On en discute ?
 Pour les discussions, c'est par [là](https://github.com/iblasquez/tuto_git/issues)  
 Pour les propositions de contenu, de modification par [ici](https://github.com/iblasquez/tuto_git/pulls)  
-Et bien sûr, n'hésitez pas à personnaliser vos messages avec des [emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) :simple_smile:
+Et bien sûr, n'hésitez pas à personnaliser vos messages avec des [emojis](http://www.webpagefx.com/tools/emoji-cheat-sheet/) :smile:
 
 ## Licence
 
-Ce document est placé sous licence CC BY-NC-SA :  [Creative Commons
+Ce document est placé sous licence CC BY-NC-SA :  
+[Creative Commons
 Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 <img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" width="100">
