@@ -78,6 +78,18 @@ Documentation sur le site de référence : [https://git-scm.com/doc](https://git
 - [Chapitre 6.2 : GitHub - Contribution à un projet](https://git-scm.com/book/fr/v2/GitHub-Contribution-%C3%A0-un-projet) du [Pro Git book](https://git-scm.com/book/fr/v2)
 
 
+### Workflow
+
+- [La puissance des workflows git](https://medium.com/@OVHUXLabs/la-puissance-des-workflows-git-12e195cafe44#.rbkmhjcc2)
+- [Comparaison de workflows (tutoriel atlassian)](https://fr.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow)
+
+- GitFlow : 
+[A successful Git branching model (article original)](http://nvie.com/posts/a-successful-git-branching-model)  
+[A successful Git branching model (version française)](https://www.occitech.fr/blog/2014/12/un-modele-de-branches-git-efficace)  
+[Git flow Cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet)
+ 
+- [GithubFlow](https://guides.github.com/introduction/flow)
+
 
 ###  Exercices interactifs pour apprendre à manipuler les commandes git
 
