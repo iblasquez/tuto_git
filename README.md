@@ -31,7 +31,8 @@ Git++ : Passez au niveau supérieur de la gestion de version : [ici](https://www
 
 ## Des Références
 
-Les références sont disponibles : [ici](egit/git_references.md)
+Les références sont disponibles : [ici](egit/git_references.md)  
+Un guide pour personnaliser vos messages de commit avec des emojis est disponible [là](https://gitmoji.carloscuesta.me/)
 
 
 

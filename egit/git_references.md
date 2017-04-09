@@ -17,7 +17,8 @@ Documentation sur le site de référence : [https://git-scm.com/doc](https://git
 
 - Bien nommer sous git   
 [Guide de style git](https://github.com/pierreroth64/git-style-guide)  
-[How to use GitHub like a proper human being](https://stories.devacademy.la/how-to-use-github-like-a-proper-human-being-1a9c895c4e13#.wwf99js5w)
+[How to use GitHub like a proper human being](https://stories.devacademy.la/how-to-use-github-like-a-proper-human-being-1a9c895c4e13#.wwf99js5w)  
+[An emoji guide for your commit messages](https://gitmoji.carloscuesta.me/)
 
 
 - Aide mémoire de commandes git    
