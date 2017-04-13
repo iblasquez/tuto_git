@@ -51,4 +51,6 @@ Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions
 
 <img src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" width="100">
 
-En savoir plus sur [les licences Creative Commons](https://creativecommons.org/licenses/?lang=fr-FR) ...
+En savoir plus sur [les licences Creative Commons](https://creativecommons.org/licenses/?lang=fr-FR) ... 
+ 
+Toutefois, toute personne enseignant au département Informatique de l'IUT du Limousin souhaitant utiliser ces documents doit demander une autorisation préalable :smile:

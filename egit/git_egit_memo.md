@@ -300,6 +300,8 @@ Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions
 
 En savoir plus sur [les licences Creative Commons](https://creativecommons.org/licenses/?lang=fr-FR) ...
 
+Toutefois, toute personne enseignant au département Informatique de l'IUT du Limousin souhaitant utiliser ce document doit demander une autorisation préalable :smile:
+
 
 
 
