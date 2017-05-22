@@ -35,13 +35,13 @@ Par défaut pour un projet Java sous Eclipse :
 
 ``` 
    
-    # Eclipse    
-    .classpath    
-    .project    
-    .settings/
+    # Eclipse
+    /.classpath
+    /.project
+    /.settings/
 
     # Maven
-    target/
+    /target/
    
 ```
   

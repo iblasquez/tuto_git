@@ -56,15 +56,16 @@ Depuis la vue `Navigator`, cliquez sur **`.gitignore `** pour ouvrir le fichier 
 
 ``` 
    
-    # Eclipse    
-    .classpath    
-    .project    
-    .settings/
+    # Eclipse
+    /.classpath
+    /.project
+    /.settings/
 
     # Maven
-    target/
+    /target/
    
 ```
+
 
 `# Eclipse` est un commentaire (optionnel). Sont indiqués ensuite les fichiers et le répertoire de configuration d'Eclipse que nous ne souhaitons pas soumettre au gestionnaire de version (`.classpath` , `.project` et `settings/`).
 
