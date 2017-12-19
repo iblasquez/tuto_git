@@ -21,7 +21,8 @@
 *Le site de référence : [https://git-scm.com](https://git-scm.com) et sa [documentation]((https://git-scm.com/doc)) ainsi que le [Pro Git book (guide officiel) en version française](https://git-scm.com/book/fr/v2)  
 Des tutoriels sur git bien illustrés : [Devenez un gourou du Git (atlassian)](https://fr.atlassian.com/git/tutorials/)  
 Des aides-mémoires pour les commandes git : [ici](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf), [là](https://education.github.com/git-cheat-sheet-education.pdf) ou encore [ici](https://zeroturnaround.com/rebellabs/git-commands-and-best-practices-cheat-sheet/) et [là](https://www.git-tower.com/blog/git-cheat-sheet)  
-Une liste d'outils permettant d'utiliser git en mode graphique : [ici](https://git-scm.com/downloads/guis) et [là](https://git.wiki.kernel.org/index.php/InterfacesFrontendsAndTools#Graphical_Interfaces)*
+Une liste d'outils permettant d'utiliser git en mode graphique : [ici](https://git-scm.com/downloads/guis) et [là](https://git.wiki.kernel.org/index.php/InterfacesFrontendsAndTools#Graphical_Interfaces)  
+[Flight rules for Git](https://github.com/k88hudson/git-flight-rules)*
 
 ## Des Vidéos à ne pas manquer
    
