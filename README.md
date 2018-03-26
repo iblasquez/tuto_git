@@ -12,13 +12,14 @@
 
 ## Des liens vers des exercices interactifs pour manipuler les commandes git
 
-* [Got 15 minutes and want to learn Git?](https://try.github.io/levels/1/challenges/1) (les commandes de bases : lisez, cliquez, comprenez !)
-* [Learn Git Branching](http://learngitbranching.js.org/) (apprendre le branching sous git)
+* [Got 15 minutes and want to learn Git?](https://try.github.io/levels/1/challenges/1) : les commandes de bases : lisez, cliquez, comprenez !
+* [Learn Git Branching](http://learngitbranching.js.org/) : apprendre le branching sous git
+* [Git-It](https://github.com/jlord/git-it-electron) : application multi-plateforme ([à installer](https://github.com/jlord/git-it-electron/releases/latest)) proposant des défis utilisant *vraiment* git et GitHub sans passer par un émulateur...
 
 
 ## Des liens à garder sous la main
 
-*Le site de référence : [https://git-scm.com](https://git-scm.com) et sa [documentation]((https://git-scm.com/doc)) ainsi que le [Pro Git book (guide officiel) en version française](https://git-scm.com/book/fr/v2)  
+Le site de référence : [https://git-scm.com](https://git-scm.com) et sa [documentation]((https://git-scm.com/doc)) ainsi que le [Pro Git book (guide officiel) en version française](https://git-scm.com/book/fr/v2)  
 Des tutoriels sur git bien illustrés : [Devenez un gourou du Git (atlassian)](https://fr.atlassian.com/git/tutorials/)  
 Des aides-mémoires pour les commandes git : [ici](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf), [là](https://education.github.com/git-cheat-sheet-education.pdf) ou encore [ici](https://zeroturnaround.com/rebellabs/git-commands-and-best-practices-cheat-sheet/) et [là](https://www.git-tower.com/blog/git-cheat-sheet)  
 Une liste d'outils permettant d'utiliser git en mode graphique : [ici](https://git-scm.com/downloads/guis) et [là](https://git.wiki.kernel.org/index.php/InterfacesFrontendsAndTools#Graphical_Interfaces)  
