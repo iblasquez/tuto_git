@@ -4,7 +4,8 @@
 
 ## Dans ce dépôt, vous trouverez  
 
-* un cours d'introduction à git (dont vous pourrez facilement refaire tous les exemples) : [ici](git_Introduction.pdf)  
+* un cours d'introduction à git (dont vous pourrez facilement refaire tous les exemples) : [ici](git_Introduction.pdf) 
+* un tutoriel de prise en main de [git](https://git-scm.com) en ligne de commande (construit à partir des exemples du cours précédent) : [ici](git/git_premierspas.md) 
 * un tutoriel de découverte de [git](https://git-scm.com) (au travers d'[EGit](http://www.eclipse.org/egit/)) : [ici](egit/git_egit_tutoriel.md)
 * un mémo pour l'utilisation de git sous Eclipse via EGit : [là](egit/git_egit_memo.md)
 
@@ -23,7 +24,7 @@ Le site de référence : [https://git-scm.com](https://git-scm.com) et sa [docum
 Des tutoriels sur git bien illustrés : [Devenez un gourou du Git (atlassian)](https://fr.atlassian.com/git/tutorials/)  
 Des aides-mémoires pour les commandes git : [ici](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf), [là](https://education.github.com/git-cheat-sheet-education.pdf) ou encore [ici](https://zeroturnaround.com/rebellabs/git-commands-and-best-practices-cheat-sheet/) et [là](https://www.git-tower.com/blog/git-cheat-sheet)  
 Une liste d'outils permettant d'utiliser git en mode graphique : [ici](https://git-scm.com/downloads/guis) et [là](https://git.wiki.kernel.org/index.php/InterfacesFrontendsAndTools#Graphical_Interfaces)  
-[Flight rules for Git](https://github.com/k88hudson/git-flight-rules)*
+[Flight rules for Git](https://github.com/k88hudson/git-flight-rules)
 
 ## Des Vidéos à ne pas manquer
    
