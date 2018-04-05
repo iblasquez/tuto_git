@@ -444,7 +444,7 @@ Sélectionnez votre répertoire **`demo`**.
 Votre workflow s'affiche dans la fenêtre.  
 Pour *bien* faire apparaître les branches : placez-vous sur un trait vertical (une double flèche s’affiche) et tirez de manière à obtenir :
 
-![gitKrakenworkflow](gitKrakenworkflow.png)
+![gitKrakenworkflow](gitKrakenworkflow.PNG)
 
 Cliquez sur un commit. Son détail s'affiche à droite.  
 Lorsque ce détail est affiché, vous pouvez cliquer sur un fichier pour voir son contenu (**`File View`**) ou son diff par rapport au commit précédent (**`Diff View`**)  
