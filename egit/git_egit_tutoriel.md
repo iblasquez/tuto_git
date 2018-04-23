@@ -51,21 +51,46 @@ Placez-vous sur le projet `testgit`, puis à partir du menu en haut de votre IDE
 * `.project` et `.classpath` qui sont des fichiers techniques gérés par Eclipse 
 * `.gitignore` qui est un fichier technique utilisé par Git pour spécifier les fichiers et répertoires à ne pas prendre en compte dans la gestion des versions (c-a-d qui ne seront pas versionnés).  
 
-Depuis la vue `Navigator`, cliquez sur **`.gitignore `** pour ouvrir le fichier et le compléter de la manière suivante (sans oublier de le sauvegarder) : 
+Depuis la vue `Navigator`, cliquez sur **`.gitignore `** pour ouvrir le fichier.  
+Ce fichier contient pour l'instant **`/target/`** ce qui signifie que les fichiers contenus dans le répertoire **`target`** (répertoire où on trouvera entre autres les fichiers byte code `.class`) ne seront pas soumis au gestionnaire de version.
+
+Pour indiquer dans le fichier **`.gitignore`** que le fichier **`.classpath`** ne doit pas être soumis au gestionnaire de version, il suffit depuis la vue **`Navigator`** de se placer sur **`.classpath`**, puis à l'aide d'un clic droit choisir **`Team -> Ignore`**.  
+La ligne **`/.classpath`** est alors ajouté dans le fichier **`.gitignore`**.  
+Dans la vue  **`Navigator`** une icône avec une croix apparaît devant le fichier **`.classpath`**. 
+
+De la même manière, faites-en sorte que le fichier **`.project`** soit ***`Ignore`***.
+
+De la même manière, faites-en sorte que le répertoire **`.settings`** soit ***`Ignore`***.
+
+
+Arrivé à cette étape, le contenu de votre fichier **`.gitignore`** doit ressembler à :
+
+``` 
+ 
+	/target/
+	/.classpath
+	/.project
+	/.settings/
+   
+```
+
+Remarque : Si on le souhaite, il est possible d'ajouter des commentaires dans ce fichier. Un commentaire doit commencer par le symbole **`#`**.
+
+Ajoutez par exemple les commentaires `# Eclipse` et `# Maven` dans votre fichier `.gitgnore` afin que son contenu ressemble désormais à :
 
 
 ``` 
    
-    # Eclipse
-    /.classpath
-    /.project
-    /.settings/
+	# Maven
+	/target/
 
-    # Maven
-    /target/
+	# Eclipse
+	/.classpath
+	/.project
+	/.settings/
+
    
 ```
-
 
 `# Eclipse` est un commentaire (optionnel). Sont indiqués ensuite les fichiers et le répertoire de configuration d'Eclipse que nous ne souhaitons pas soumettre au gestionnaire de version (`.classpath` , `.project` et `settings/`).
 
@@ -77,6 +102,7 @@ Pour en savoir plus, jetez un rapide petit coup d'oeil à :
 - [A collection of useful .gitignore templates](https://github.com/github/gitignore)    
 - [A .gitignore file for Intellij and Eclipse with Maven](http://gary-rowe.com/agilestack/2012/10/12/a-gitignore-file-for-intellij-and-eclipse-with-maven/)  
   
+***N'oubliez de sauvegardez le fichier `.gitignore` avant de continuer !***
 
 ### 3.  Visualiser et choisir à partir de l'IDE les fichiers à versionner (ou pas ...)
 
@@ -196,7 +222,7 @@ Pour l'instant, nous allons configurer l'opération **`push`** (nous configurero
 Une fenêtre **`Configure Push`** s'ouvre :
 	- Le premier paramétrage concerne l'**`URI`** qui n'est autre que l'**URL HTTPS** de **votre** dépôt distant Github (https://github.com/username/testgit.git). Cliquez sur **`Change`** pour ouvrir la fenêtre `Select a URI` et collez dans le champ **`URI`** l'adresse de votre dépôt GitHub (https://github.com/username/testgit.git). Dans la zone `Authentification`, n'oubliez pas d'entrer votre nom de compte GitHub (**`User`**) et votre mot de passe (**`Password`**), et de cocher la case **`Store in Secure Store`**. Cliquez sur **`Finish`** pour terminer la configuration de l'`URI`
 
-	- le second paramétrage concerne plus précisément la configuration de l'opération **`push`**. Cliquez sur **`Advanced...`** pour ouvrir la fenêtre `Configure Push`. Nous allons choisir une configuration simple pour commencer qui consiste à ***pousser toutes les branches locales*** (nous n'en avons en fait qu'une seule pour le moment dans ce tutoriel). Pour cela, cliquez sur le bouton **`Add All Branches Spec`**. Nous puvons également choisir de ***pousser tous les tags locaux*** en cliquant sur le bouton ***`Add All Tags Spec`***.
+	- le second paramétrage concerne plus précisément la configuration de l'opération **`push`**. Cliquez sur **`Advanced...`** pour ouvrir la fenêtre `Configure Push`. Nous allons choisir une configuration simple pour commencer qui consiste à ***pousser toutes les branches locales*** (nous n'en avons en fait qu'une seule pour le moment dans ce tutoriel). Pour cela, cliquez sur le bouton **`Add All Branches Spec`**. Nous pouvons également choisir de ***pousser tous les tags locaux*** en cliquant sur le bouton **`Add All Tags Spec`**.
 	Une fois ces deux boutons cliqués, deux lignes doivent apparaître dans le tableau `Specifications for push` (ne cochez rien d'autres dans le tableau pour le moment). Terminez simplement la configuration du push en cliquant sur **`Finish`**
 
 Cliquez sur le **`Save`** pour sauvegarder cette nouvelle configuration de `Remotes` (si vous ne voyez pas le bouton `Save`, aggrandissez la fenêtre :smile: ) 
@@ -475,7 +501,7 @@ Une fenêtre `Merge Result` s'ouvre indiquant que la fusion s'est bien passée e
 Remarque : Les résultats possibles lors de la fusion peuvent être de type `Already-up-to-date` (si on essayait par exemple de refusionner une deuxième fois la branche `fizzbuzz` dans `master`), `Fast-forward`, `Merged`, `Conflicting` ou encore `Failed`.
 
 
-**Remarque (notions avancées) :  **  
+**Remarque (notions avancées) :**  
 
 * En conservant choisissant l'option par défaut `fast-forward`, git va seulement déplacer l’étiquette de la branche master sur le même commit que fizzbuzz en créant ou non un nouveau commit (c'est ce que vous pouvez constater en consultant la vue History). Le graphe n'isole plus le point de départ de la branche fizzbuzz, et une fois la branche elle-même supprimée (son étiquette de branche), il ne restera plus trace des limites de celle-ci dans le graphe. Cette solution marche bien si la branche et purement locale et temporaire et si le master n'a pas subi de modification depuis la création de la branche (auquel cas un rebase peut être nécessaire).
 * Si la branche doit rester identifiable à terme dans l'historique des commit, c-a-d si on souhaite qu'elle reste visible dans le graphe par une « bosse », il faudra exécuter un true merge, c-a-d un véritable commit de fusion (il faut alors choisir l'option no fast-forward). Cette option sera intéressante si la branche a une sémantique claire et documentée et qu’elle doit continuer à apparaître clairement dans le graphe de l'historique.  
@@ -685,7 +711,7 @@ Cette fois-ci la fusion ne s'est pas faite en *fast-forward*, mais c'est une *vr
 
 Remarque : On se retrouve en fait dans la configuration suivante :
 
-![Historique FastForward(fizzbuzz) Merge(marabout)](images/Historique_FastForward_Merge.png)
+![Historique FastForward(fizzbuzz) Merge(marabout)](images/Historique_FastForward_Merge.PNG)
 
 
 * Lorsque le **master** a évolué (comme dans le cas de la fusion de **marabout**), il est toutefois possible de faire en sorte que l'historique reste linéaire si au lieu d'effectuer directement un **true merge**, on effectue à la base un **rebase** suivi d'un **fast-forward**. Alors **rebase/fast-forward vs rebase** (*historique linéaire ou non?*) : des discussions sur le sujet peuvent être consultées [ici](http://www.git-attitude.fr/2014/05/04/bien-utiliser-git-merge-et-rebase/), [là](https://fr.atlassian.com/git/tutorials/merging-vs-rebasing) ou encore [là](http://webadeo.github.io/git-simpler-better-faster-stronger/#1.0) : un vrai débat existe dans lequel nous n'entrerons pas dans le cas de ce tutoriel ...
@@ -822,7 +848,7 @@ Consultez la **vue `History` pour constater** que ce dernier commit a bien eu li
 
 Actuellement, deux branches sont tirées depuis **master** : il s'agit de **marabout-simple** et **refactoring** (comme le montre l'historique suivant ). 
 
-![Historique_Refactoring_MaraboutSimple_AvantFusion](images/Historique_Refactoring_MaraboutSimple_AvantFusion.png)
+![Historique_Refactoring_MaraboutSimple_AvantFusion](images/Historique_Refactoring_MaraboutSimple_AvantFusion.PNG)
 
 Ces branches ont donnée lieu respectivement à deux et un commit... Il ne reste plus qu'à fusionner ces modifications dans **master**, et pour cela nous commencerons par la branche **refactoring**.
 
@@ -838,7 +864,7 @@ Pour ***fusionner*** la branche `refactoring` dans la branche `master`, procéde
 Une fenêtre `Merge Result` s'ouvre indiquant que la fusion s'est bien passée en indiquant que le résultat est cette fois-ci **`Fast-forward`**. Il ne reste plus qu'à cliquer sur **`OK`**.
 
 La branche **refactoring** a donc pu être intégré à la branche **master** en *fast-forward* puisque **master** n'avait pas subi de modication depuis que la branche refactoring avait été tirée. Les étiquettes **master** et **refactoring** pointent sur le même commit (le dernier) comme le montre la **vue `History`** ou l'image ci-après :
-![Historique_Refactoring_FastForward](images/Historique_Refactoring_FastForward.png)
+![Historique_Refactoring_FastForward](images/Historique_Refactoring_FastForward.PNG)
 
 
 #### 7.9 Fusionner `marabout-simple` dans un `master` (résoudre un conflit !)
@@ -940,7 +966,7 @@ Rendez-vous via votre navigateur sur votre dépôt Github (https://github.com/us
 
 Cliquez sur l'onglet **`Graph`** de votre projet, puis sur l'onglet **`Network`**, vous obtiendrez une représentation visuelle de votre historique git similaire à la suivante :
 
-![Historique_MaraboutSimple_Fusion](images/Historique_MaraboutSimple_Fusion.png)
+![Historique_MaraboutSimple_Fusion](images/Historique_MaraboutSimple_Fusion.PNG)
   
 Remarque : Cette représentation permet de mieux visualiser  :
 
