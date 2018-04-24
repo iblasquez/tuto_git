@@ -113,13 +113,13 @@ Des icônes spécifiques au gestionnaire de sources apparaissent pour tous les f
 
 * Le **point d'interrogation** signifie quant à lui que l'on n'a pas encore indiqué si le fichier devait être pisté ou non par le gestionnaire de versions : c'est actuellement le cas pour le fichier `.gitignore` qui dispose d'un point d'interrogation.  
 
-* Pour soumettre ce fichier au gestionnaire de gestions, il est nécessaire de l'**ajouter à l'index**. Pour cela, placez vous dans la vue `Navigator` sur le fichier `.gitignore`, à l'aide d'un clic droit, sélectionner **`Team -> Add to Index `**.
+* Pour soumettre ce fichier au gestionnaire de versions, il est nécessaire de l'**ajouter à l'index**. Pour cela, placez vous dans la vue `Navigator` sur le fichier `.gitignore`, à l'aide d'un clic droit, sélectionner **`Team -> Add to Index `**.
 Une fois cette opération effectuée, le point d'interrogation disparaît et un **signe `+`** apparaît devant l'icône du fichier `.gitignore`. 
 
 ***Remarque :*** ***HEAD***, ***Index***, ***working tree***  
 - **HEAD** est une référence qui **pointe sur le commit** (enregistrement) sur lequel vont se baser les prochaines modifications qui seront effectuées.   
 - L'**Index** est une référence qui contient la **liste des fichiers dont Git doit pister les modifications**.  
-- Le **working tree** (arbre de travail) est une référence qui contient est la **liste de tous les fichiers présents dans votre dépôt**, qu’ils soient pistés par Git ou pas. Pour savoir quels fichiers ont été modifiés il suffit de regarder les différences entre le contenu des références HEAD et Working tree.
+- Le **working tree** (arbre de travail) est une référence qui contient la **liste de tous les fichiers présents dans votre dépôt**, qu'ils soient pistés par Git ou pas. Pour savoir quels fichiers ont été modifiés il suffit de regarder les différences entre le contenu des références HEAD et Working tree.
 
 ### 4. Effectuer un premier commit  (`Team -> Commit... `)
 
@@ -149,7 +149,7 @@ Créez dans le paquetage `fr.unilim.iut.testgit` de `/src/main/java` une classe 
 #### 5.1 Commiter l'ajout de la nouvelle classe ...
 Pour commiter cette classe, il suffit de rappeler **`Team -> Commit `** :  
 - en indiquant **`Création de HelloWorld`** comme **message** de commit  
-- en chochant le fichier **`HelloWorld.java`** dans la liste des fichiers (pour un ajout dans l'**index**).
+- en cochant le fichier **`HelloWorld.java`** dans la liste des fichiers (pour un ajout dans l'**index**).
 
 ... N'oubliez pas vérifier que le **cylindre orange** est bien apparu sur l'icône de la classe après le commit (cette icône est également visible aussi bien depuis la vue `Package Explorer` que depuis la vue `Package Navigator`).
 
@@ -309,7 +309,7 @@ Dans le champs **`Remote repository`**, vous devriez trouver l'adresse de votre 
 Dans le champs **`source`**, aidez-vous de la completion `Ctrl+espace ` pour choisir la branche **`master`**.  
 Cliquez sur **`Next`**, **`Finish`** puis **`Save`**.
 
-*Remarque : Comme pour le `push`, cette opération ne configuration n'aura besoin d'être effectuée qu'une seule fois.*
+*Remarque : Comme pour le `push`, cette opération de configuration n'aura besoin d'être effectuée qu'une seule fois.*
 	
 
 #### Effectuer un `fetch` (rappatrier les données distantes vers le dépôt local)...
@@ -374,7 +374,7 @@ Une dernière fenêtre **`Select a wizard to use for importing projects`** deman
 Le projet **`basicloop`** apparaît alors dans la vue **`Package Explorer`** avec son dossier **`src`**, le **`pom.xml`** et le **`README.md`**.  
 
 D'après l'option précédente choisie, ce projet est pour l'instant un projet general.  
-Pour le convertir en projet maven, il suffit de vous placer sur le nom du projet `basicloop` dans la **vue `Package Explorer`**, puis à l'aide d'un clic droit de sélectionner **`Configure -> Convert to Maven Project**`... Et hop ! le tour est joué !
+Pour le convertir en projet maven, il suffit de vous placer sur le nom du projet `basicloop` dans la **vue `Package Explorer`**, puis à l'aide d'un clic droit de sélectionner **`Configure -> Convert to Maven Project`**... Et hop ! le tour est joué !
 
 ## Un petit exercice bien branché qui va fusionner <a id="exercice"></a>
 
@@ -468,7 +468,7 @@ Une fois le commit effectué, vérifiez que la classe FizzBuzz a bien une **icô
 
 Pour vous déplacer d'une branche à l'autre, il vous suffit de vous positionner sur le projet puis **`Team-> Switch To`** et choisir le nom de la branche.  
 
-En laissant le code de la classe **`HelloWorld`** affiché à l'écran, naviguer entre `master` et `fizzbuzz` avec des **`Team-> Switch To->master`** et des **`Team-> Switch To->master`** afin de bien constater que le contenu de la classe `HelloWorld` des deux classes est bien différent.
+En laissant le code de la classe **`HelloWorld`** affiché à l'écran, naviguer entre `master` et `fizzbuzz` avec des **`Team-> Switch To->master`** et des **`Team-> Switch To->fizzbuzz`** afin de bien constater que le contenu de la classe `HelloWorld` des deux classes est bien différent.
 
 Pour continuer le tutoriel, positionnez-vous sur la branche **`master`**.  
 Vous pouvez vous assurer que vous êtes sur la branche **`master`** en regardant le nom du projet qui doit être de la forme **`testgit [testgit master]`**
@@ -698,7 +698,7 @@ Pour ***merger*** la branche `marabout` dans la branche `master`, procédez de l
 
 Une fenêtre `Merge Result` s'ouvre indiquant que la fusion s'est bien passée en indiquant que le résultat est cette fois-ci **`Merge`**. Il ne reste plus qu'à cliquer sur **`OK`**.
 
-Cette fois-ci la fusion ne s'est pas faite en *fast-forward*, mais c'est une *vraie* fusion (un  **true merge**) qui a été réalisée puisque la branche **master** avait évoluée depuis la création de la branche **marabout** (en l'occurrence avec deux commitx supplémentaires créés par la fusion *fast-forward* de **fizzbuzz**). 
+Cette fois-ci la fusion ne s'est pas faite en *fast-forward*, mais c'est une *vraie* fusion (un  **true merge**) qui a été réalisée puisque la branche **master** avait évoluée depuis la création de la branche **marabout** (en l'occurrence avec deux commits supplémentaires créés par la fusion *fast-forward* de **fizzbuzz**). 
 
 
 **Remarques (notions avancées) :**
@@ -843,7 +843,7 @@ Sauvegardez et exécutez pour vérifier que votre programme fonctionne correctem
 **Committez (`Team->Commit`)** avec un message du genre **`refactoring nommage`** et en veillant bien à ce que les 3 fichiers **`HelloWorld.java`**, **`Fizzbuzz.java`** et **`Marabout.java`** apparaissent bien dans **Files**.
 
 Une fois le commit effectué, vérifiez que la classe **`Marabout`** a bien une **icône orange**.   
-Consultez la **vue `History` pour constater** que ce dernier commit a bien eu lieu sur la branche **`marabout`**.  
+Consultez la **vue `History` pour constater** que ce dernier commit a bien eu lieu sur la branche **`refactoring`**.  
 
 
 Actuellement, deux branches sont tirées depuis **master** : il s'agit de **marabout-simple** et **refactoring** (comme le montre l'historique suivant ). 
