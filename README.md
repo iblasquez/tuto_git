@@ -13,8 +13,9 @@
 
 ## Des liens vers des exercices interactifs pour manipuler les commandes git
 
-* [Got 15 minutes and want to learn Git?](https://try.github.io/levels/1/challenges/1) : les commandes de bases : lisez, cliquez, comprenez !
+* [Resources to learn git](https://try.github.io)
 * [Learn Git Branching](http://learngitbranching.js.org/) : apprendre le branching sous git
+* [Visualizing git](http://git-school.github.io/visualizing-git) et [Git Gud](https://nic-hartley.github.io/git-gud) : des simulateurs web pour manipuler/visualiser les commandes et mieux comprendre les workflows.
 * [Git-It](https://github.com/jlord/git-it-electron) : application multi-plateforme ([à installer](https://github.com/jlord/git-it-electron/releases/latest)) proposant des défis utilisant *vraiment* git et GitHub sans passer par un émulateur...
 
 

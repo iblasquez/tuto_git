@@ -522,9 +522,20 @@ Prenez quand même le temps de consulter les transparents du cours relatifs à l
 
 ## Des exercices interactifs en ligne pour les plus rapides... <a id="plusRapides"></a>
 
-* [Got 15 minutes and want to learn Git?](https://try.github.io/levels/1/challenges/1) : les commandes de bases : lisez, cliquez, comprenez !
-* [Learn Git Branching](http://learngitbranching.js.org/) : apprendre le branching sous git
-* [Git-It](https://github.com/jlord/git-it-electron) : application multi-plateforme ([à installer](https://github.com/jlord/git-it-electron/releases/latest)) proposant des défis utilisant *vraiment* git et GitHub sans passer par un émulateur...
+
+* Commencez par la manipulation autour des branches :   
+[Learn Git Branching](http://learngitbranching.js.org/) : apprendre le branching sous git 
+
+* Continuez par la simulation d’un workflow et la manipulation/visualisation de commandes comme revert ou cherry-pick  :  
+[Visualizing git](http://git-school.github.io/visualizing-git)  
+
+* Terminez par [Git-It](https://github.com/jlord/git-it-electron) : application multi-plateforme ([à installer](https://github.com/jlord/git-it-electron/releases/latest)) proposant des défis utilisant *vraiment* git et GitHub sans passer par un émulateur...
+
+
+
+Remarques :   
+- Les précédentes ressources sont accessibles sur la page [Resources to learn git](https://try.github.io)  
+- [Git-Gud](https://nic-hartley.github.io/git-gud/) est un autre simulateur web très simple d'utilisation pour manipuler/visualiser les commandes de bases de git.
 
 
 ## Annexe <a id="annexe"></a>
